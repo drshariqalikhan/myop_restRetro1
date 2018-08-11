@@ -60,7 +60,7 @@ public class AddMeds extends AppCompatActivity {
     Button uploadtoserverbtn;
     Bitmap bitmap;
     String imagepath;
-
+//
     ApiInterface apiInterface;
     ProgressDialog progressDialog;
     @Override

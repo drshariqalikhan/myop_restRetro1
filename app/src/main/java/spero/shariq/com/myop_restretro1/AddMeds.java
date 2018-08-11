@@ -100,7 +100,7 @@ public class AddMeds extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<MedImageModel>> call, Response<List<MedImageModel>> response) {
                 if(response.isSuccessful())
-                {//test
+                {
 
                     progressDialog.dismiss();
                     Toast.makeText(AddMeds.this,"image uploaded!",Toast.LENGTH_LONG).show();

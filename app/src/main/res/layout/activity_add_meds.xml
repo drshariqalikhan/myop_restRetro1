@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="spero.shariq.com.myop_restretro1.AddMeds">
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="ADD PHOTO OF YOUR MEDICATIONS NAME FROM PHOTO GALLERY"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview"
+            android:background="@color/blue"
+           android:onClick="imgclick"
+            android:src="@drawable/searchgallery"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:id="@+id/MedicationFreqLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="How many time per day do you take this medication?"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+           <Spinner
+               android:id="@+id/Spinner"
+               android:layout_weight="1"
+               android:entries="@array/values"
+               android:layout_width="match_parent"
+               android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/uploadtoserverbtn"
+            android:text="Upload"
+            android:onClick="uploadbtnClick"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       <LinearLayout
+           android:layout_gravity="bottom"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/cancel_actionbtn"
+               android:onClick="CancelClick"
+               android:text="CLOSE"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
